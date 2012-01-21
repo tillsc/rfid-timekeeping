@@ -4,13 +4,13 @@ This is a set of ruby scripts enhancing the [SWITCH-Edv](http://www.zeit-messung
 
 ### System requirements
 1. Ruby >= 1.8 with fully working *rubygems*
-   (=> don't use your systems package manager if you're having problems with this and 
+   (Don't use your system's package manager if you're having problems with this and 
    try [rvm](https://rvm.beginrescueend.com/) instead)
 2. The [bundler](http://gembundler.com/) dependency management gem:
 
         gem install bundler
 
-  or
+    or
 
         sudo gem install bundler
 
@@ -18,9 +18,9 @@ This is a set of ruby scripts enhancing the [SWITCH-Edv](http://www.zeit-messung
 4. *gnuplot* with X11 output (only required for plotting scripts)
 
 ### Installation
-0. Install Ruby, gnuplot and the RFID software
-1. Clone (`git clone git@github.com:tillsc/rfid-timekeeping.git`) or [download](https://github.com/tillsc/rfid-timekeeping/zipball/master) this repository
-2. Install dependencies
+1. Install Ruby, bundler, gnuplot and the RFID software
+2. Clone (`git clone git@github.com:tillsc/rfid-timekeeping.git`) or [download](https://github.com/tillsc/rfid-timekeeping/zipball/master) this repository
+3. Install dependencies
 
         bundle install
 
