@@ -35,7 +35,7 @@ The following scripts will start a fully working instance of the SWITCH-Edv *rea
 
 Run the reader through the *reader_plotter* script:
 
-    bundle execute ruby bin/reader_plotter.rb <path_to_reader>/reader <reader_params>
+    bundle exec ruby bin/reader_plotter.rb <path_to_reader>/reader <reader_params>
 
 Quit the reader with Strg+C
 
@@ -46,4 +46,4 @@ Quit the reader with Strg+C
 
 This script will start the reader, wait for 5 seconds and analyze the output for 20 seconds. This script can be used to do laboratory tests with RFID chips.
 
-    bundle execute ruby bin/reader_timed.rb <path_to_reader>/reader <reader_params>
+    bundle exec ruby bin/reader_timed.rb <path_to_reader>/reader <reader_params>
