@@ -3,9 +3,19 @@
 This is a set of ruby scripts enhancing the [SWITCH-Edv](http://www.zeit-messung.de/) timekeeping software.
 
 ### System requirements
-1. Ruby >= 1.8
-2. RFID system and reader software by SWITCH-Edv (closed source)
-3. *gnuplot* with X11 output (only required for plotting scripts)
+1. Ruby >= 1.8 with fully working *rubygems*
+   (=> don't use your systems package manager if you're having problems with this and 
+   try [rvm](https://rvm.beginrescueend.com/) instead)
+2. The [bundler](http://gembundler.com/) dependency management gem:
+
+        gem install bundler
+
+  or
+
+        sudo gem install bundler
+
+3. RFID system and reader software by SWITCH-Edv (closed source)
+4. *gnuplot* with X11 output (only required for plotting scripts)
 
 ### Installation
 0. Install Ruby, gnuplot and the RFID software
