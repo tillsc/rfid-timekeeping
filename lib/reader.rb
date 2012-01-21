@@ -3,6 +3,8 @@ require 'pty'
 class Reader
 
   attr_reader :incorrect_lines
+  
+  attr_accessor :line_callback
 
   def initialize(cmd, line_callback = nil, &block)
     @cmd = cmd
