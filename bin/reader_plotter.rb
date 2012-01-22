@@ -38,6 +38,7 @@ begin
 
   cmd = Gnuplot.gnuplot(false) or raise 'gnuplot not found'
   @gpio = IO::popen(cmd, "w")
+  @gpio << "set yrange [-100:0]\n"
 
   @reader = Reader.new(ARGV.join(" ")) do |rfid, ant, strength|
     now = (Time.now.to_f * 1000).to_i % 86400000 # Milliseconds since midnight
