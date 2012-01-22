@@ -21,6 +21,7 @@ def self.plot(now)
       data[0].shift
       data[1].shift
     end
+    @data.delete(rfid) unless data[0].any?
   end
   @gpio << "plot " 
   @gpio << @data.keys.map { |rfid| 
@@ -49,6 +50,7 @@ begin
   
   @reader.line_callback = lambda do |line| 
     puts line
+    true
   end
 
   @reader.run
